@@ -1,0 +1,41 @@
+[PrefixDeclaration]
+:		http://www.semanticweb.org/dis/library-ontology#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+
+[SourceDeclaration]
+sourceUri	library_ontology
+connectionUrl	jdbc:mysql://localhost/simple_library
+username	root
+password	111
+driverClass	com.mysql.jdbc.Driver
+
+[MappingDeclaration] @collection [[
+mappingId	urn:MAPID-b5e528b16b994750b5b109cedc765cb8
+target		:Person-{reader_id} a :Person ; :firstName {first_name} ; :lastName {last_name} . 
+source		select reader_id, first_name, last_name, patronymic from readers
+
+mappingId	urn:MAPID-b82991499ac64055b56e55b8505b96ce
+target		:Library-{library_id} a :Library ; :libraryTitle {name} ; :libraryAddress {address} . 
+source		select library_id, name, address from libraries
+
+mappingId	urn:MAPID-52cae81248e046ed914ba1b05c8e79d2
+target		:Book-{book_id} a :Book ; :bookAuthor {author} ; :bookTitle {title} ; :bookPublishYear {year} . 
+source		select book_id, title, author, year from books
+
+mappingId	urn:MAPID-a4f965f34ea6487586d15fc45a9c2258
+target		:Library-{library_id} :contains :Book-{book_id} . 
+source		select book_id, library_id from books
+
+mappingId	urn:MAPID-cc7729ca76c946379368327d52ad9ac4
+target		:Person-{reader_id} :isRegisteredIn :Library-{library_id} . 
+source		select reader_id, library_id from reader_library
+
+mappingId	urn:MAPID-f2760fc2a24c4e8cb84e2138475bc047
+target		:Person-{reader_id} :tookAtHome :Book-{book_id} . 
+source		select book_id, reader_id from books
+]]
+

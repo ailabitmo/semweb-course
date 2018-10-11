@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dis/library-ontology#"
+     xml:base="http://www.semanticweb.org/dis/library-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dis/library-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#isRegisteredIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#isRegisteredIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#tookAtHome -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#tookAtHome">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#bookAuthor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#bookAuthor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#bookPublishYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#bookPublishYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#bookTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#bookTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#firstName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#lastName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#libraryAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#libraryAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#libraryTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#libraryTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#pid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dis/library-ontology#pid">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dis/library-ontology#Book"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dis/library-ontology#Library"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dis/library-ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dis/library-ontology#Person"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

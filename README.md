@@ -1,8 +1,8 @@
-Материалы к курсу "Введение в Semantic Web и Linked Data"
-=============
+# Курсы
 
-[Пример #1](https://github.com/ailabitmo/semweb-course/tree/master/example-1): пример создание простого RDF датасета, развертывания SPARQL endpoint'а и выполнения простых и федеративных SPARQL запросов.
+1. [Онтологический инжиниринг и Semantic Web](course-oe)
+1. [Интеграция данных в информационных системах](course-di)
 
-# Контакты
+## Контакты
 
 Максим Колчин (kolchinmax@niuitmo.ru)
